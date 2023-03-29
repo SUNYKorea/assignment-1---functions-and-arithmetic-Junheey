@@ -1,5 +1,5 @@
-# Name:
-# SBUID: 
+# Name: Junhee Youn
+# SBUID: 112492955
 
 # Remove the ellipses (...) when writing your solutions.
 
@@ -8,10 +8,23 @@
 # TODO: Complete the implementation of fahrenheit2celsius () and what_to_wear(). 
 
 def fahrenheit2celsius(fahrenheit): 
-   ...
+   celsius = 5/9 * (fahrenheit - 32)
+   return celsius
 
 def what_to_wear(celsius):
-   ...
+   if celsius < -10:
+       return 'Puffy jacket'
+   elif -10 < celsius < 0:
+       return 'Scarf'
+   elif 0 < celsius < 10:
+       return 'Sweater'
+   elif 10 < celsius < 20:
+       return 'Light jacket'
+   else:
+       return 'T-shirt'
+
+celsius = fahrenheit2celsius   
+print(what_to_wear(celsius))
 
 # ---------------------------- Exercise II --------------------------------------
 # ----------------- Area and perimeter of a triangle  ---------------------------
@@ -19,28 +32,44 @@ def what_to_wear(celsius):
 # compute_triangle_perimeter from scratch  
 
 def shoelace_triangle_area(x1, y1, x2, y2, x3, y3):
-    ...
+    p1 = (x1, y1)
+    p2 = (x2, y2)
+    p3 = (x3, y3)
+    area = (abs((x1*y2 + x2*y3 + x3*y1) - (x1*y3 + x2*y1 + x3*y2))/2)
+    return area
+
+import math
 
 def euclidean_distance(x1, y1, x2, y2):
-    ...
+    distance = math.sqrt((x1 - x2)**2 + (y1 - y2)**2)
+    return distance 
+    
 
 def compute_triangle_perimeter(x1, y1, x2, y2, x3, y3):
-    ...
+    perimeter = s1 +s2 + s3
+    return perimeter 
+    
 
 
 # ---------------------------- Exercise III -------------------------------------
 # ----------------- Compute the area of a regular polygon -----------------------
 # TODO: Fill the functions deg2rad, apothem  and polygon_area 
 
+import math
 
 def deg2rad(deg):
-    ...
+    return (deg * math.pi) / 180
+    
 
 def apothem(number_sides, length_side):
-   ...
+   angle = 180 / number_sides
+   return length_side / (2* math.tan(angle))
+   
 
 def polygon_area(number_sides, length_side):
-   ...
+   return (number_sides * length_side * apothem) / 2
+
+
 
 
 # ---------------------------- Test -------------------------------------
