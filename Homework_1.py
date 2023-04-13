@@ -1,7 +1,18 @@
 # Name: Junhee Youn
 # SBUID: 112492955
-
+##################### SCORE ######################
+####### Score:  0/10
+#################################################
 # Remove the ellipses (...) when writing your solutions.
+####your output:
+# (base) D:\CSE 101 Ass1\Assignment 1 - Functions and Arithmetic-04-05-2023-05-19-27>D:/anaconda/python.exe "d:/CSE 101 Ass1/Assignment 1 - Functions and Arithmetic-04-05-2023-05-19-27/Junheey/Homework_1.py"
+# Traceback (most recent call last):
+#   File "d:\CSE 101 Ass1\Assignment 1 - Functions and Arithmetic-04-05-2023-05-19-27\Junheey\Homework_1.py", line 27, in <module>
+#     print(what_to_wear(celsius))
+#   File "d:\CSE 101 Ass1\Assignment 1 - Functions and Arithmetic-04-05-2023-05-19-27\Junheey\Homework_1.py", line 15, in what_to_wear
+#     if celsius < -10:
+# TypeError: '<' not supported between instances of 'function' and 'int'
+
 
 # ---------------------------- Exercise I ---------------------------------------
 # ----------------- Convert Fahrenheit to Celsius -------------------------------
