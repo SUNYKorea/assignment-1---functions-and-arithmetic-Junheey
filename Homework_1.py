@@ -1,7 +1,7 @@
 # Name: Junhee Youn
 # SBUID: 112492955
 ##################### SCORE ######################
-####### Score:  6/10
+####### Score:  7.5/10
 #################################################
 # Remove the ellipses (...) when writing your solutions.
 ####your output:
